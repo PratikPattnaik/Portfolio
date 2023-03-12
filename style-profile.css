@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #30312A; */
+    color: #C3C3C3;
+    font-family: 'Source Code Pro', monospace;
+}
+body{
+    overflow: hidden;
+}
+.header-aboutme{
+    background-color: #1E1F1C;
+}
+.header-icon{
+    padding: 4px 10px;
+}
+section{
+    margin: auto;
+    padding: auto;
+    background-color: #30312A;
+}
+.navbar{
+    width: 3rem;
+    height: 100vh;
+    background-color: #30312A;
+    position: absolute;
+}
+.navbar-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.nav-items{
+    padding: 32%;
+}
+.nav-items:nth-last-child(3){
+    margin-bottom: auto;
+}
+.nav-items:last-child{
+    padding: 10px 0 50px 12px;
+    margin-left: -15px;
+}
+
+
+.navbar-2{
+    padding-left:3rem;
+    width: 16rem;
+    height: 100vh;
+    background-color: #1E1F1C;
+    display: flex;
+    flex-direction: column;
+}
+.nav-2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-2-items{
+    padding: 1.5% 5%;
+}
+.vscode{
+    align-self: stretch;
+    background-color: #272822;
+    padding: 3% 5%;
+}
+a{
+    text-decoration: none;
+    color: #C3C3C3;
+}
+.icon-vs{
+    position: absolute;
+    top: 30%;
+    left: 48%;
+}
+.code{
+    margin-left: 19rem;
+    position: absolute;
+    background-color: #30312a;
+    height: 100%;
+    width: 100%;
+    padding: 0.5% 1.5%;
+}
+.nums{
+    position: absolute;
+}
+.hello{
+    position: relative;
+    margin: 0 0 0 0%;
+    padding: 0% 3%;
+}
+.abt-me{
+    padding: 0% 0% 0% 3%;
+}
+
+.active,.nav-items:hover{
+    border-left: 4px solid #C3C3C3;
+    opacity: 75%;
+    padding-left: 12%;
+}
+
+.calci,.spam{
+    padding-left: 2.5%;
+}
+.code img{
+    width: 64%;
+    margin: 3% 8%;
+}
+.spam img{
+    width: 50%;
+    margin: 2% 14%;
+}
+.active2{
+    background-color: #8B8F7A;
+    opacity: 0.85;
+}
+.active2 a{
+    color: #FFFFFF;
+}
+
+.pink{
+    color: #F92665;
+}
+.yellow{
+    color: #E6BA3C;
+}
+.blue{
+    color: #66CBBA;
+}
+.green{
+    color: #79D72E;
+}
+.purple{
+    color: #8472E8;
+}

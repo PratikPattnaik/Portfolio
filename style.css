@@ -1,0 +1,282 @@
+/* :root{
+
+} */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #30312A;
+    color: #C3C3C3;
+    font-family: 'Source Code Pro', monospace;
+}
+.one{
+    /* background-color: crimson; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box img{
+    width: 30%;
+}
+.txt{
+    padding: 0% 0% 10% 5%;
+    position: relative;
+}
+.txt h1{
+    font-size: 3em;
+}
+.txt h3{
+    font-size: 1.5em;
+}
+
+
+.home-1,.home-2 {
+  font-size:1rem;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:black;
+  border-color: #C3C3C3;
+  border-radius:3px;
+  background:#C3C3C3;
+}
+.home-1 a,.home-2 a{
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+}
+              
+
+.arrow {
+    position: absolute;
+    top: 90%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.arrow span {
+    background-color: transparent;
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.random{
+    color: #30312A;
+}
+
+.t1{
+    position: relative;
+    width: max-content;
+}
+
+.t1::before,
+.t1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.t1::before{
+    background-color: #30312A;
+    animation: typing 2s steps(12) 1s forwards;
+}
+
+.t1::after{
+    width: 0.75rem;
+    background: #C3C3C3;
+    animation: 
+        typing 2s steps(12) 1s forwards,
+        blinking 500ms steps(12) infinite;
+}
+
+.t2{
+    position: relative;
+    width: max-content;
+}
+
+.t2::before,
+.t2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.t2::before{
+    background-color: #30312A;
+    animation: typing 2s steps(26) 3s forwards;
+}
+
+.t2::after{
+    opacity: 0;
+    width: 0.75rem;
+    background: #C3C3C3;
+    animation: 
+        opacity 1ms ease 3s forwards,
+        typing 2s steps(26) 3s forwards,
+        blinking 500ms steps(26) infinite;
+}
+
+.t3{
+    position: relative;
+    width: max-content;
+}
+
+.t3::before,
+.t3::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.t3::before{
+    background-color: #30312A;
+    animation: typing 3s steps(41) 5s forwards;
+}
+
+.t3::after{
+    opacity: 0;
+    width: 0.75rem;
+    background: #C3C3C3;
+    animation: 
+        typing 3s steps(26) 5s forwards,
+        blinking 500ms steps(26) infinite,
+        opacity 1ms ease 5s forwards;
+}
+
+.t4{
+    position: relative;
+    width: max-content;
+}
+
+.t4::before,
+.t4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.t4::before{
+    background-color: #30312A;
+    animation: typing 3s steps(30) 8s forwards;
+}
+
+.t4::after{
+    opacity: 0;
+    width: 0.75rem;
+    background: #C3C3C3;
+    animation: 
+        typing 3s steps(30) 8s forwards,
+        blinking 500ms steps(26) infinite,
+        opacity 1s normal 8s forwards;
+}
+
+.home-1{
+    opacity: 0;
+    animation: 
+        fade 1s ease 11s forwards,
+        opacity 1ms ease 11s forwards;
+}
+
+.home-2{
+    opacity: 0;
+    animation: 
+        fade 1s ease 12s forwards,
+        opacity 1ms ease 12s forwards;
+}
+
+.arrow{
+    opacity: 0;
+    animation: 
+        opacity 1ms ease 13s forwards,
+        fade-2 1s ease 13s forwards;
+}
+
+@keyframes typing{
+    to{
+        left: 100%;
+    }
+}
+@keyframes blinking{
+    to{
+        background: transparent;
+    }
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade {
+    from{
+        translate: 0px 200px ;
+    }
+    to{
+        translate: 0px 10px;
+    }
+}
+@keyframes fade-2 {
+    from{
+        translate: 0px 50px ;
+    }
+    to{
+        translate: 0px 0px;
+    }
+}
